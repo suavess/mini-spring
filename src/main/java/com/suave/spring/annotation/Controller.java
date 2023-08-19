@@ -11,10 +11,10 @@ import java.lang.annotation.Target;
  * @author Suave
  * @since 2023/08/18 15:30
  */
-@Target({ElementType.FIELD})
+@Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface Component {
+public @interface Controller {
     /**
      * 用于标识注入IoC中的Bean的名称
      * @return

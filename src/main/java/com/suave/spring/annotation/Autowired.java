@@ -7,14 +7,14 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 用于标识一个需要被注入IoC中的Bean
+ * 标识需要自动注入的属性
  * @author Suave
  * @since 2023/08/18 15:30
  */
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface Component {
+public @interface Autowired {
     /**
      * 用于标识注入IoC中的Bean的名称
      * @return
